@@ -7,6 +7,7 @@ body
 div#wrapper
 {
 	width:80%;
+   min-width: 800px;
 	background-color:#333333;
 	margin-top:50px;
 	margin-bottom:50px;
@@ -75,6 +76,7 @@ p
 	color:#FFFFFF;
 	opacity:1;
 	padding:5px;
+   display: inline;
 }
 h1
 {
