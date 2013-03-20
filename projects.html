@@ -83,6 +83,34 @@ Made with Game Maker.
 
 <br/><br/>
 
+<h1 class="projectSection">--- Class Projects ---</h1>
+<!-- Colliding balls java program -------------------------------------->
+<table class="projectTable">
+<tr>
+<th class="tableTitle"><p class="projectText">Colliding balls with a heap</p></th>
+<th class="tableDLlink">
+<a href="https://dl.dropbox.com/u/423071/mgrijalva%20Website%20Downloads/Program2%20-%20Colliding%20Balls.zip">Download</a>
+</th>
+</tr>
+<tr><td>
+This is a program that was assigned as part of my abstract data types class. The initial
+program (which was provided) predicts when balls will collide. It finds the minimum time
+and then animates them until that collision occurs. This way all the collisions need not
+be checked every step (which would be sloooooow). The collision times we're maintained in
+a 2D array, and the running time was O(n^2) as a result.</br>
+My task: </br>
+   Replace the array with a min-heap. With the min-heap the run time can be brought down
+   to O(nlogn). With 2000 balls there was a 142% increase in framerate and a 58% decrease
+   in execution time. Not too shabby.
+</br></br>
+Run the program via command line: "Program2.jar XXX" where XXX is either the number of
+balls to randomly generate, or a file with info about balls (samples provided)
+</td>
+<td class="image"><div class="center"><a href="https://dl.dropbox.com/u/423071/mgrijalva.github.com/images/collidingBalls_screenshot.png">
+<img class="project" src="https://dl.dropbox.com/u/423071/mgrijalva.github.com/images/collidingBalls_screenshot.png"/></a></div>
+</td></tr>
+</table>
+
 <h1 class="projectSection">--- Miscellaneous Programs and Utilities ---</h1>
 
 <!--Car maintenance tracker------------------------------------------------->
@@ -95,7 +123,7 @@ Made with Game Maker.
 </th>
 </tr>
 <tr><td>
-This little DOS program keeps track of your car maintenace. It's
+This little command line program keeps track of your car maintenace. It's
 something I built because I was tired of writing down, erasing, and losing the piece of
 paper with all my maintenance checks.<br/><br/>
 When you first start the program it'll ask you to log the last time you performed each task.
