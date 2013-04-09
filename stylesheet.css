@@ -1,6 +1,6 @@
 body
 {
-	background-color:#303030;
+	background-color:#525252;
 	font-family:Arial,Helvetica,sans-serif;
 }
 
@@ -89,7 +89,7 @@ h1
 h1.projectSection {
 	color: #FFFFFF;
 	margin: 25px;
-	font-size: 32px;
+	font-size: 38px;
 	font-weight: bold;
 	text-decoration: underline;
 }
@@ -110,6 +110,9 @@ table.projectTable
 	width:80%;
 	color:#FFFFFF;
 	/*border-collapse:collapse;*/
+   box-shadow:10px 10px 5px #262626;
+	-moz-box-shadow:10px 10px 5px #262626;
+	-webkit-box-shadow:10px 10px 5px #262626;
 }
 th
 {
@@ -118,6 +121,7 @@ th
 }
 th.tableTitle
 {
+   color: #FFFFFF;
 	font-size:20px;
 	text-align:left;
 }
