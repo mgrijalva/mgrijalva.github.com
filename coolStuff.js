@@ -1,4 +1,9 @@
 $(document).ready(function() {
+   $("h1.title").animate({
+      opacity: 1,
+      marginLeft: '200px'
+      }, 750);
+
    $("a.navLinks").mouseover(function() {
       //$(this).fadeTo(100, 0.5, function(){});
       $(this).animate({
