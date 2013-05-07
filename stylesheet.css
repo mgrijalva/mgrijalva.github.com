@@ -73,6 +73,7 @@ ul
 }
 p
 {
+   font-size: 14px;
 	color:#FFFFFF;
 	opacity:1;
 	padding:5px;
@@ -164,6 +165,18 @@ div.center
 span.ul
 {
 	text-decoration:underline;
+}
+p.projectText
+{
+   font-size: 14px;
+   /*color: #FF0000;*/
+}
+/*--------------------------------*/
+
+
+li
+{
+   font-size:14px;
 }
 
 /*Navigation links-----------------------------------------*/
