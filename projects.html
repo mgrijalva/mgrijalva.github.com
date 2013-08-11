@@ -4,7 +4,7 @@
    <title>Projects</title>
    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-   <meta name="description" content="Michael Grijalva's programming projects." />
+   <meta name="description" content="A list of my personal projects." />
 
    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
    <script src="jquery.animate-colors.js" type="text/javascript"></script>
@@ -20,13 +20,12 @@
       <div id="nav">
          <a class="navLinks" href="index.html">Home</a>
          <a class="navLinks" href="projects.html">Projects</a>
-         <a class="navLinks" href="resources.html">Resources</a>
       </div> <!--End nav div-->
 
       <div id="main">
          <br/><br/>
          <p>Here you will find a collection of my work. Class projects, games, experiments, etc.
-         All files on this page are distributed via my Dropbox.
+         All files on this page are distributed via my Dropbox or Github page.
          <span class="ul">Click the images for an enlarged view.</span></p>
 
          <h1 class="projectSection">--- Games ---</h1>
@@ -147,11 +146,11 @@
                      The white player plays from the top to the bottom, and the black player plays from left to right. Each player tries
                      to form a pathway across the board.
                      <br/><br/>
-                     The AI uses the Monte Carlo method. While the method itself seems rather stupid, the results are surprising. The AI
-                     is tough to beat. Unfortunately the AI is a bit slow though as it crunches through the simulations. The game works best on 
-                     board sizes of 5 to 8.
+                     The AI uses the Monte Carlo method. While the method itself seems rather stupid, the results are surprisingly intelligent. The AI
+                     is tough to beat. The AI works best on board sizes of around 5 to 11. 11 is the standard size for Hex.
                      <br/><br/>
-                     This game was initially written for a class, but I re-wrote it from scratch to increase performance.
+                     This game was initially written for a class, but I wasn't happy with its performance. I re-wrote it from scratch to
+					 increase performance by fixing design issues (I used pointers way too much) and adding C++11 threading.
 					 <br/><br/>
 					 NOTE: You can easily compile a Unix version with the Makefile on the Github page. The above download link contains a Windows version.
                   </p>
@@ -208,9 +207,9 @@
          This program simulates the classic game of life. It prints a before and after picture containing the
          creature after the requested number of generations.
          <br/><br/>
-         One issue with the game of life is how to count the neighbors efficiently. One could simply scan the entire array, count the neighbors, kill/create the appropriate cells, and be done. This is horribly (O(n^2)) inefficient though. The implementation in this program uses an un-initialized array. 
+         One issue with the game of life is how to count the neighbours efficiently. One could simply scan the entire array, count the neighbours, kill/create the appropriate cells, and be done. This is horribly (O(n^2)) inefficient though. The implementation in this program uses an un-initialized array. 
          <br/><br/>
-         The live cells are placed into an empty array separate from the main board. For each generation the program looks at this array, finds the neighboring cells, counts the live neighbors for each one, kills/creates cells, adds the new live cells to the array, and removes the dead cells. Using this method only the live cells need to be checked for each generation. This brings the running time down to O(n), where n is the number of live cells.
+         The live cells are placed into an empty array separate from the main board. For each generation the program looks at this array, finds the neighbouring cells, counts the live neighbours for each one, kills/creates cells, adds the new live cells to the array, and removes the dead cells. Using this method only the live cells need to be checked for each generation. This brings the running time down to O(n), where n is the number of live cells.
          </p></td>
          <td class="image"><div class="center"><a href="https://dl.dropbox.com/u/423071/mgrijalva.github.com/images/gameoflife_screenshot.png">
          <img class="project" src="https://dl.dropbox.com/u/423071/mgrijalva.github.com/images/gameoflife_screenshot.png"/></a></div>
