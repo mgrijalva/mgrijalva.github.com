@@ -37,11 +37,12 @@ div#nav
 	border-bottom:thin dashed #666666;
 }
 
-div#main
+div#main /* Holds the content of the page */
 {
 	width:90%;
 	margin-top:1px;
-	padding:10px;
+	padding:25px;
+	text-align: justify;
 }
 
 div#footer
@@ -73,11 +74,10 @@ ul
 }
 p
 {
-   font-size: 14px;
+	font-size: 14px;
 	color:#FFFFFF;
 	opacity:1;
 	padding:5px;
-   display: inline;
 }
 h1
 {
@@ -104,8 +104,7 @@ h1.projectSection {
 	text-decoration: underline;
 }
 h2.current {
-   color: #FFFFFF;
-	margin: 25px;
+	color: #FFFFFF;
 	font-size: 24px;
 	font-weight: bold;
 	text-decoration: underline;
