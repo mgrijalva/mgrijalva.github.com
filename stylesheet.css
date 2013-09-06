@@ -50,7 +50,7 @@ div#footer
 	width:5%;
 	margin-left:auto;
 	margin-right:0px;
-	padding:5px;
+	padding:15px;
 	margin-top:100px;
 	border-right:thin solid #FF3399;
 	border-bottom:thin solid #FF3399;
@@ -78,6 +78,12 @@ p
 	color:#FFFFFF;
 	opacity:1;
 	padding:5px;
+}
+p.footer
+{
+	font-size: 10px;
+	padding: 0px;
+	margin: 0px;
 }
 h1
 {

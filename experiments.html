@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Experiments</title>
+   <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+   <meta name="description" content="A listing of all my experiments." />
+
+   <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+   <script src="jquery.animate-colors.js" type="text/javascript"></script>
+   <script src="coolStuff.js" type="text/javascript"></script>
+</head>
+
+<body>
+   <div id="wrapper">
+      <div id="header">
+         <h1 class="title">Experiments</h1>
+      </div> <!--End header div-->
+
+      <div id="nav">
+         <a class="navLinks" href="index.html">Home</a>
+         <a class="navLinks" href="projects.html">Projects</a>
+		 <a class="navLinks" href="experiments.html">Experiments</a>
+      </div> <!--End nav div-->
+
+      <div id="main">
+         <br/><br/>
+         <p>This page contains smaller, miscellaneous, possibly unstable 'experiments' of mine. Most of it is just stuff that I randomly decided to make. These of course won't be finished, or 100% stable. They may crash.
+         <span class="ul">Click the images for an enlarged view.</span></p>
+		<br/>
+		
+         <!--Interactive Complete Graph-------------------------------------------------------->
+         <table class="projectTable">
+            <tr>
+               <th id="interactive_graph" class="tableTitle">Interactive Complete Graph</th>
+               <th class="tableDLlink"><a href="https://dl.dropboxusercontent.com/u/423071/mgrijalva%20Website%20Downloads/Interactive_Complete_Graph.zip">Download Source</a>
+               </th>
+            </tr>
+            <tr>
+               <td>
+               <p class="projectText">
+                  This is something I felt like making one night. Two coding sessions later and this came out. You place nodes on the screen, and they connect themselves to every other node on the screen. Nodes will disappear when they collide with each other. The shortest edge is highlighted green, and the longest red. It makes for some cool looking images.
+				  <br/><br/>
+				  Controls:</p>
+				  <ul>
+					<li>H: help on/off</li>
+					<li>Left mouse: place node</li>
+					<li>Scrool wheel: steer nodes</li>
+					<li>Left & Right arrow keys: decrease/increase node velocity</li>
+					<li>Up & Down arrow keys: decrease/decrease blur</li>
+					<li>F: toggle fullscreen</li>
+				  </ul>
+			   <p class="projectText">
+				  To run this program you can either:
+			   </p>
+			   <ul>
+			   <li>1. Just run the SFML_graphTest.exe under the Release folder</li>
+			   <li>2. Compile it yourself. You'll need to change the 'additional includes' and 'additional library directories' to point to your local SFML location.</li>
+			   </ul>
+			   <p class="projectText">
+				  Built with SFML 2.1 and VS2012.<br/>
+				  Added 9/5/2013
+               </p>
+               <br/>
+               </td><td class="image"><a href="images/graph_screenshot.png"><img class="project" src="images/graph_screenshot.png" /></td>
+            </tr>
+         </table>
+         <br/>
+
+      </div> <!--End main div-->
+      <div id="footer">
+         <p class="footer">Experimental footer</p>
+      </div> <!--End footer div-->
+   </div> <!--End wrapper div-->
+</body>
+</html>
