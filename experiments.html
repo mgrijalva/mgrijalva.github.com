@@ -45,7 +45,7 @@
 				  <ul>
 					<li>H: help on/off</li>
 					<li>Left mouse: place node</li>
-					<li>Scrool wheel: steer nodes</li>
+					<li>Scroll wheel: steer nodes</li>
 					<li>Left & Right arrow keys: decrease/increase node velocity</li>
 					<li>Up & Down arrow keys: decrease/decrease blur</li>
 					<li>F: toggle fullscreen</li>
@@ -66,6 +66,31 @@
             </tr>
          </table>
          <br/>
+		 
+		 <!-- Data Logger ---------------------------------------------->
+		 <table id="dataLogger" class="projectTable">
+			<tr>
+               <th class="tableTitle">Data Logger</th>
+               <th class="tableDLlink"><a href="https://bitbucket.org/mgrijalva/data-logger/downloads">Download exe</a>
+               </th>
+            </tr>
+            <tr>
+               <td>
+               <p class="projectText">
+					I created this program with a friend who wanted to set up an Arduino with some sensors (g force, temperatures, etc.) and plot the data. This is the result of just playing around with the idea.
+					<br/>
+					This program takes in a text file containing data (taken from an Arduino) and plots all the data. It computes the min, max, and average of each data set as well.
+					</br>
+					The program is also capable of reading data realtime from an Arduino given that the Arduino is just serial printing a series of numbers in the correct format. Choose the COM port your Arduino is on from the Serial menu.
+					<br/><br/>
+					This program was made specifically for the Arduino set up we have. It isn't too flexible (try feeding a file with a different amount of columns), so that's why it's in the Experiments section.
+					<br/><br/>
+					Programmed in C# with WinForms for the GUI. The .zip download contains a sample data file.<br/>
+					Added Oct 5, 2013
+               </p>
+               </td><td class="image"><a href="images/dataLogger_screenshot.png"><img class="project" src="images/dataLogger_screenshot.png" /></td>
+            </tr>
+		 </table>
 
       </div> <!--End main div-->
       <div id="footer">
