@@ -136,7 +136,7 @@ th
 }
 th.tableTitle
 {
-   color: #FFFFFF;
+    color: #FFFFFF;
 	font-size:20px;
 	text-align:left;
 }
@@ -177,6 +177,15 @@ p.projectText
 }
 /*--------------------------------*/
 
+td.frontPage
+{
+    border: none;
+}
+span.smallNote
+{
+    font-size: 10px;
+    color: #FFFFFF;
+}
 
 li
 {
@@ -220,7 +229,7 @@ a.navLinks:hover
 a:link {
 	color:#FFFFFF;
 	font-size:14px;
-	text-decoration:underline;
+	/*text-decoration:underline;*/
 }
 a:visited {
 	color:#FFFFFF;
