@@ -153,12 +153,14 @@ td
 td.image
 {
 	border-left:thin solid #FFFFFF;
+    text-align:center;
 }
 img.project
 {
-	width:100px;
-	height:100px;
+	width:75%;
 	border: none;
+    margin:auto;
+    padding:auto;
 }
 div.center
 {
