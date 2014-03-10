@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Film Clouds</title>
+        <style>
+            body {
+                background: #FFFFFF;
+                font-family: "Lucida Sans Unicode";
+                margin: 0;
+                padding: 0;
+            }
+            div#header {
+                width: 500px;
+                padding: 0;
+                margin: 0;
+                margin-left: auto;
+                margin-right: auto;
+                /*background: gray;*/
+                text-align: center;
+            }
+            h2 {
+                margin: 0;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0;
+            }
+            h2#chapter_number {
+                color: teal;
+                display: inline;
+            }
+            select {
+                width: 300px;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            span#decrease_chapter, span#increase_chapter {
+                font-size: 32px;
+                font-weight: bold;
+                opacity: 1.0;
+                cursor: pointer;
+                cursor: hand;
+            }
+            span#decrease_chapter:hover, span#increase_chapter:hover {
+                background: teal;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <select id="movie_list" onchange="switchMovie()">
+                <option id="0">Wreck-It Ralph</option>
+                <option id="1">Django Unchained</option>
+                <option id="2">Pulp Fiction</option>
+            </select>
+            </br>
+            <span id="decrease_chapter" onclick="prevChapter()"><</span>
+            <h2 id="chapter_number">Chapter 1</h2>
+            <span id="increase_chapter" onclick="nextChapter()">></span>
+        </div>
+
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="d3.layout.cloud.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
