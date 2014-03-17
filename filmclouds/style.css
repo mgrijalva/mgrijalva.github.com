@@ -1,0 +1,53 @@
+body {
+    background: #000000;
+    font-family: "Lucida Sans Unicode";
+    margin: 0;
+    padding: 0;
+}
+div#header {
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    /*background: gray;*/
+    text-align: center;
+}
+div#colorChanger {
+    width: 40px;
+    height: 40px;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid teal;
+}
+h2 {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+h2#chapter_number {
+    color: teal;
+    display: inline;
+}
+h2#warning {
+    color: red;
+}
+select {
+    width: 300px;
+    font-size: 24px;
+    font-weight: bold;
+}
+span#decrease_chapter, span#increase_chapter {
+    color: red;
+    font-size: 32px;
+    font-weight: bold;
+    opacity: 1.0;
+    cursor: pointer;
+    cursor: hand;
+}
+span#decrease_chapter:hover, span#increase_chapter:hover {
+    background: teal;
+    color: white;
+}       
