@@ -204,7 +204,7 @@ function animateRight()
         .duration(500)
         .ease("elastic")
         .attr("x", json.chapters[chap_num].motion * 100)
-    d3.timer(animateLeft, 1000);
+    d3.timer(animateLeft, 1500);
     return true;
 }
 
@@ -219,6 +219,6 @@ function animateLeft()
         .duration(500)
         .ease("elastic")
         .attr("x", 0)
-    d3.timer(animateRight, 1000);
+    d3.timer(animateRight, 1500);
     return true;
 }
