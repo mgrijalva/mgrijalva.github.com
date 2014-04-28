@@ -1,103 +1,131 @@
 <!DOCTYPE html>
-<html>
-<head>
-   <title>Experiments</title>
-   <link rel="stylesheet" href="stylesheet.css" type="text/css" />
-   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-   <meta name="description" content="A listing of all my experiments." />
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="Michael Grijalva">
 
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-   <script src="jquery.animate-colors.js" type="text/javascript"></script>
-   <script src="coolStuff.js" type="text/javascript"></script>
-</head>
+		<link rel="shortcut icon" href="favicon.ico">
 
-<body>
-   <div id="wrapper">
-      <div id="header">
-         <h1 class="title">Experiments</h1>
-      </div> <!--End header div-->
+		<title>Experiments</title>
 
-      <div id="nav">
-         <a class="navLinks" href="index.html">Home</a>
-         <a class="navLinks" href="projects.html">Projects</a>
-		 <a class="navLinks" href="experiments.html">Experiments</a>
-      </div> <!--End nav div-->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="custom-style.css" rel="stylesheet">
+	</head>
+	<body>
 
-      <div id="main">
-         <br/><br/>
-         <p>This page contains smaller, miscellaneous, possibly unstable 'experiments' of mine. Most of it is just stuff that I randomly decided to make. These of course won't be finished, or 100% stable. They may crash.
-         <span class="ul">Click the images for an enlarged view.</span></p>
-		<br/>
-         
-         <!--Interactive Complete Graph-------------------------------------------------------->
-         <table class="projectTable">
-            <tr>
-               <th id="interactive_graph" class="tableTitle">Interactive Complete Graph</th>
-               <th class="tableDLlink"><a href="https://dl.dropboxusercontent.com/u/423071/mgrijalva%20Website%20Downloads/Interactive_Complete_Graph.zip">Download Source</a><br/>
-               <a href="http://www.youtube.com/watch?v=OAQ8NuzDJPI">Video</a>
-               </th>
-            </tr>
-            <tr>
-               <td>
-               <p class="projectText">
-                  This is something I felt like making one night. Two coding sessions later and this came out. You place nodes on the screen, and they connect themselves to every other node on the screen. Nodes will disappear when they collide with each other. The shortest edge is highlighted green, and the longest red. It makes for some cool looking images.
-				  <br/><br/>
-				  Controls:</p>
-				  <ul>
-					<li>H: help on/off</li>
-					<li>Left mouse: place node</li>
-					<li>Scroll wheel: steer nodes</li>
-					<li>Left & Right arrow keys: decrease/increase node velocity</li>
-					<li>Up & Down arrow keys: decrease/decrease blur</li>
-					<li>F: toggle fullscreen</li>
-				  </ul>
-			   <p class="projectText">
-				  To run this program you can either:
-			   </p>
-			   <ul>
-			   <li>1. Just run the SFML_graphTest.exe under the Release folder</li>
-			   <li>2. Compile it yourself. You'll need to change the 'additional includes' and 'additional library directories' to point to your local SFML location.</li>
-			   </ul>
-			   <p class="projectText">
-				  Built with SFML 2.1 and VS2012.<br/>
-				  Added 9/5/2013
-               </p>
-               <br/>
-               </td><td class="image"><a href="images/graph_screenshot.png"><img class="project" src="images/graph_screenshot.png" /></td>
-            </tr>
-         </table>
-         <br/>
-		 
-		 <!-- Data Logger ---------------------------------------------->
-		 <table id="dataLogger" class="projectTable">
-			<tr>
-               <th class="tableTitle">Data Logger</th>
-               <th class="tableDLlink"><a href="https://bitbucket.org/mgrijalva/data-logger/downloads">Download exe</a><br/>
-               <a href="https://bitbucket.org/mgrijalva/data-logger">Source</a>
-               </th>
-            </tr>
-            <tr>
-               <td>
-               <p class="projectText">
-					I created this program with a friend who wanted to set up an Arduino with some sensors (g force, temperatures, etc.) and plot the data. This is the result of just playing around with the idea.
-					<br/>
-					This program takes in a text file containing data (taken from an Arduino) and plots all the data. It computes the min, max, and average of each data set as well.
-					</br>
-					The program is also capable of reading data realtime from an Arduino given that the Arduino is just serial printing a series of numbers in the correct format. Choose the COM port your Arduino is on from the Serial menu.
-					<br/><br/>
-					This program was made specifically for the Arduino set up we have. It isn't too flexible (try feeding a file with a different amount of columns), so that's why it's in the Experiments section.
-					<br/><br/>
-					Programmed in C# with WinForms for the GUI. The .zip download contains a sample data file.<br/>
-					Added Oct 5, 2013
-               </p>
-               </td><td class="image"><a href="images/dataLogger_screenshot.png"><img class="project" src="images/dataLogger_screenshot.png" /></td>
-            </tr>
-		 </table>
+		<div class="navbar navbar-inverse navbar-fixed-top custom-navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">***</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li class="active"><a href="experiments.html">Experiments</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-      </div> <!--End main div-->
-      <div id="footer">
-         <p class="footer">Experimental footer</p>
-      </div> <!--End footer div-->
-   </div> <!--End wrapper div-->
-</body>
+		<div class="container">
+			<div class="content-main">
+				<h1 class="page-title">Experiments</h1>
+				<hr/>
+				<p>
+					This page contains smaller, miscellaneous, possibly unstable 'experiments' of mine. Most of it is just stuff that I randomly decided to make. These of course won't be finished, or 100% stable. They may crash. Click the images for an enlarged view.
+				</p>
+
+				<!-- Interactive complete graph -->
+				<table class="table table-bordered table-custom">
+					<thead>
+						<tr>
+							<th>Interactive Complete Graph</th>
+							<th>
+								<a href="https://dl.dropboxusercontent.com/u/423071/mgrijalva%20Website%20Downloads/Interactive_Complete_Graph.zip">Source Code</a>
+								<br/>
+								<a href="http://www.youtube.com/watch?v=OAQ8NuzDJPI">Video</a>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<p>
+									This is something I felt like making one night. Two coding sessions later and this came out. You place nodes on the screen, and they connect themselves to every other node on the screen. Nodes will disappear when they collide with each other. The shortest edge is highlighted green, and the longest red. It makes for some cool looking images.
+									<br/><br/>
+									Controls:</p>
+									<ul>
+										<li>H: help on/off</li>
+										<li>Left mouse: place node</li>
+										<li>Scroll wheel: steer nodes</li>
+										<li>Left and Right arrow keys: decrease/increase node velocity</li>
+										<li>Up and Down arrow keys: decrease/decrease blur</li>
+										<li>F: toggle fullscreen</li>
+									</ul>
+									<p>
+										To run this program you can either:
+									</p>
+									<ul>
+										<li>1. Just run the SFML_graphTest.exe under the Release folder</li>
+										<li>2. Compile it yourself. You'll need to change the 'additional includes' and 'additional library directories' to point to your local SFML location.</li>
+									</ul>
+									<p>
+										Built with SFML 2.1 and VS2012.<br/>
+										Added 9/5/2013
+									</p>
+							</td>
+							<td>
+								<a href="images/graph_screenshot.png"><img width="200px" src="images/graph_screenshot.png" /></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<!-- Data logger -->
+				<table class="table table-bordered table-custom">
+					<thead>
+						<tr>
+							<th>Data Logger</th>
+							<th>
+								<a href="#">Download</a>
+								<br/>
+								<a href="#">Source code</a>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<p>
+									I created this program with a friend who wanted to set up an Arduino with some sensors (g force, temperatures, etc.) and plot the data. This is the result of just playing around with the idea. 
+									This program takes in a text file containing data (taken from an Arduino) and plots all the data. It computes the min, max, and average of each data set as well. 
+									The program is also capable of reading data realtime from an Arduino given that the Arduino is just serial printing a series of numbers in the correct format. Choose the COM port your Arduino is on from the Serial menu. 
+									<br/><br/>
+									This program was made specifically for the Arduino set up we have. It isn't too flexible (try feeding a file with a different amount of columns), so that's why it's in the Experiments section. 
+									<br/><br/>
+									Programmed in C# with WinForms for the GUI. The .zip download contains a sample data file.
+									<br/>
+									Added Oct 5, 2013
+								</p>
+							</td>
+							<td><a href="images/dataLogger_screenshot.png"><img width="200px" src="images/dataLogger_screenshot.png"/></a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+	</body>
 </html>
