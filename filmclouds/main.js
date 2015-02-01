@@ -136,7 +136,7 @@ function draw(words)
         .style("font-family", "Impact")
         .style("fill", function(d, i) { 
             index = parseInt(Math.random() * colors.length); // Choose a random color
-            return colors[index];
+            return '#' + colors[index];
             })
         .attr("text-anchor", "middle")
         .attr("transform", function(d) {
